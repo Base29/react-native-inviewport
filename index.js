@@ -5,8 +5,8 @@ var ReactNative = require('react-native');
 var window = ReactNative.Dimensions.get('window');
 var {View} = ReactNative;
 import {PropTypes} from 'prop-types';
-
-module.exports = React.createClass({
+var createReactClass = require('create-react-class');
+module.exports = createReactClass({
     displayName: 'InViewPort',
     //mixins: [NativeMethodsMixin],
     propTypes: {
